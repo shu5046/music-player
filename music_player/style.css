@@ -1,0 +1,237 @@
+/* Container for the slider */
+.slider-container {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 50px; /* Adjust as needed */
+}
+
+/* Slider styles */
+.slider {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider-round {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider-round:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider-round {
+  background-color: #4caf50;
+}
+
+input:checked + .slider-round:before {
+  transform: translateX(30px);
+}
+
+h1{
+    position: absolute;
+    left: 45%;
+    
+}
+/* All songs section */
+/* #all-songs{
+    position: absolute;
+  display: inline-block;
+  bottom: 0%;
+  width: 30%;
+  height:85%;
+  background-color:#664cafc0;
+  border-radius: 0% 3% 3% 0%;
+}
+.song-name{
+    background-color: #4caf50;
+    position: absolute;
+    display: inline-block;
+    height: auto;
+    width:auto;
+} */
+ 
+#all-songs {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    width: 28%;
+    height: 85%;
+    font-family: Tahoma, sans-serif;
+    background-color:rgba(245, 196, 196, 0.9); /* Light gray background for a soft tone */
+    border-radius: 0% 3% 3% 0%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    padding: 10px;
+    overflow-y: auto;
+}
+#new-all-songs {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    width: 28%;
+    height: 85%;
+    font-family: Tahoma, sans-serif;
+    background-color: rgba(17, 11, 95, 0.9); /* Light gray background for a soft tone */
+    border-radius: 0% 3% 3% 0%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.song-name {
+    background-color: #b2dfdb; /* Light teal for a calm, refreshing feel */
+    color: #004d40; /* Darker teal for text contrast */
+    position: relative;
+    top: 20px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    font-family: Tahoma, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.song-name:hover {
+    background-color: #80cbc4; /* Slightly darker teal on hover */
+}
+
+/* middle section */
+#details {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center;     /* Center items horizontally */
+    bottom: 0;
+    left: 32%;
+    width: 35%;
+    height: 85%;
+    font-family: Tahoma, sans-serif;
+    background-color: rgba(245, 196, 196, 0.9); /* Light gray background for a soft tone */
+    border-radius: 3%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    padding: 10px;
+    overflow-y: auto; /* Add scrolling if content overflows */
+    text-align: center; /* Center text inside the container */
+}
+#newSongCard{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center;     /* Center items horizontally */
+    bottom: 0;
+    left: 32%;
+    width: 35%;
+    height: 85%;
+    font-family: Tahoma, sans-serif;
+
+    border-radius: 3%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    padding: 10px;
+    overflow-y: auto; /* Add scrolling if content overflows */
+    text-align: center; /* Center text inside the container */
+    background-color: rgba(17, 11, 95, 0.9); /* Light gray background for a soft tone */
+}
+.albumart{
+    position: relative;
+    width: 65%;
+    height: 60%;
+    margin-bottom: 10px;
+}
+.songname {
+    font-size: 1.2rem;
+    color: #4caf50;
+    font-weight: bold;
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Tahoma', sans-serif;
+    position: relative;
+    
+}
+
+.albumname {
+    font-size: 1rem;
+    color: #777;
+    margin: 5px 0;
+    width: 150px;
+    font-style: italic;
+    font-family: 'Tahoma', sans-serif;
+   
+}
+.audio{
+    margin: 10px;
+}
+
+.left{
+    position: relative;
+    left: -3%;
+}
+.right{
+    position: relative;
+    left: 3%;
+    bottom: 3.4%;
+}
+#createplaylist{
+    position: absolute;
+    right:11%;
+    top:15%;
+}
+#playlist {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    right: 0%;
+    width: 28%;
+    height: 78%;
+    font-family: Tahoma, sans-serif;
+    background-color: rgba(245, 196, 196, 0.9); /* Light gray background for a soft tone */
+    border-radius: 3% 0% 0% 3%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    padding: 10px;
+    overflow-y: auto; /* Add scrolling if content overflows */
+    text-align: center; /* Center text inside the container */
+}
+#newplaylist {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    right: 0%;
+    width: 28%;
+    height: 78%;
+    font-family: Tahoma, sans-serif;
+    background-color: rgba(17, 11, 95, 0.9); /* Light gray background for a soft tone */
+    border-radius: 3% 0% 0% 3%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    padding: 10px;
+    overflow-y: auto; /* Add scrolling if content overflows */
+    text-align: center; /* Center text inside the container */
+}
